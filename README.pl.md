@@ -11,7 +11,7 @@ zapoznania się z konfiguracją dodatkowych opcji
 
 Wykorzystaj to repozytorium organizacji GoIT jako szablon do utworzenia
 repozytorium własnego projektu. W tym celu kliknij na przycisk
-`"Use this template"` i wybierz opcję `"Create a new repository"`, jak pokazano
+`"Use this template "` i wybierz opcję `"Create a new repository"`, jak pokazano
 na rysunku.
 
 ![Creating repo from a template step 1](./assets/template-step-1.png)
