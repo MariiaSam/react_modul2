@@ -9,13 +9,25 @@ import TodoList from './TodoList/TodoList';
 class App extends Component {
   state = {
     todos: [
-      { id: 'id_1', text: 'Learn', completed: false },
-      { id: 'id_2', text: 'Counter', completed: false },
+      { id: 'id_1', text: 'Learn', completed: true },
+      { id: 'id_2', text: 'Counter', completed: true },
       { id: 'id_3', text: 'Redux', completed: false },
-    ],
+    ], 
+  };
+
+
+  deleteTodo = todoId => {
+    this.setState(prevState => ({
+      todos: prevState.todos.filter(todo => todo.id !== todoId),
+    }));
   };
   render() {
     const { todos } = this.state;
+
+    const completedCount = todos.length
+
+    const completedTodosCount = todos.reduce((acc, todo) => todo.completed ? acc + 1 : acc, 0, )
+
     return (
       <div>
         {/* <DropdownMenu> 
@@ -25,8 +37,11 @@ class App extends Component {
           </DropdownMenuItem>
           <DropdownMenuItem onSelect={() => alert('Edit')}>Edit</DropdownMenuItem>
         </DropdownMenu> */}
-
-        <TodoList todos={todos} />
+        <div>
+          <p> Загальна кількість: {completedCount}  </p>
+          <p> Загальна кількість виконаних: {completedTodosCount} </p>
+         </div>
+        <TodoList todos={todos} onDeleteTodo={this.deleteTodo} />
       </div>
     );
   }
