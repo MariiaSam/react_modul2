@@ -1,18 +1,43 @@
-const { Component } = require("react");
+// import React, { Component } from 'react';
 
+// class Dropdown extends Component {
+//   state = {
+//     visible: false,
+//   };
 
-class Dropdown extends Component {
-render() {
+//   toggle = () => {
+//     this.setState(prevState => ({
+//       visible: !prevState.visible,
+//     }));
+//   };
 
-<div className="Dropdown">
-    <button type="button" className="Dropdown__toggle" >
-        Open
-    </button>
+//   show = () => {
+//     this.setState({ visible: true });
+//   };
 
-    <div className="Dropdown__menu">Menu</div>
-</div>}
+//   hide = () => {
+//     this.setState({ visible: false });
+//   };
 
+//   render() {
+//     return (
+//       <div className="Dropdown">
+//         <button
+//           type="button"
+//           className="Dropdown__toggle"
+//           onClick={this.toggle}
+//         >
+//       {this.state.visible ? 'Hide' : 'Open'}
+//         </button>
 
-}
+//         {/* <button type="button" className="Dropdown__toggle" onClick={this.hide} >
+//         Close
+//     </button> */}
 
-export default Dropdown
+//         {this.state.visible && <div className="Dropdown__menu">Menu</div>}
+//       </div>
+//     );
+//   }
+// }
+
+// export default Dropdown;
