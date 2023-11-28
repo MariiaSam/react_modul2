@@ -8,7 +8,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <DropdownMenu>
+        <DropdownMenu> 
           <DropdownMenuItem onSelect={() => alert('Delete')}>
             <FaTrash size={16} color="blue" />
             Delete
