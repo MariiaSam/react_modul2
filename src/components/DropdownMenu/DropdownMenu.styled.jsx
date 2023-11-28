@@ -1,5 +1,6 @@
 import styled from '@emotion/styled';
-import { MenuButton as ReachMenuButton, MenuItem as ReachMenuItem } from '@reach/menu-button';
+import { MenuButton as ReachMenuButton, MenuItem as ReachMenuItem } from  "@reach/menu-button";
+import "@reach/menu-button/styles.css";
 
 export const MenuButton = styled(ReachMenuButton)`
   background-color: tomato;
