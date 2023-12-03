@@ -1,5 +1,5 @@
-import { MenuItem } from './DropdownMenu.styled';
+// import { MenuItem } from './DropdownMenu.styled';
 
-export const DropdownMenuItem = ({ onSelect, children }) => {
-  return <MenuItem onSelect={onSelect}>{children}</MenuItem>;
-};
+// export const DropdownMenuItem = ({ onSelect, children }) => {
+//   return <MenuItem onSelect={onSelect}>{children}</MenuItem>;
+// };
